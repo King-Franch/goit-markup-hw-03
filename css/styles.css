@@ -484,6 +484,7 @@ body {
 
 .main-section {
   padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .filters-container {
@@ -508,9 +509,11 @@ body {
   color: var(--button-color-text);
   border-radius: 4px;
   text-decoration: none;
-  list-style-type: none;
-  flex-wrap: wrap;
   border: 1px solid #e7e9fc;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
 }
 
 .filters-button:focus,
@@ -581,17 +584,12 @@ body {
 .footer {
   padding-top: 120px;
   padding-bottom: 120px;
-
   background-color: var(--footer-hero-bg-color);
 }
 
 .footer-text {
   width: 264px;
   margin-left: 156px;
-}
-
-.footer-top {
-  padding-top: 120px;
 }
 
 .footer-paragraph {
