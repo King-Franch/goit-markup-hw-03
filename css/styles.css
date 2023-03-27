@@ -2,13 +2,15 @@
   /* bg */
   --primary-bg-color: #ffffff;
   --footer-hero-bg-color: #2e2f42;
+  /* navigation */
+  --color-nav-normal: #2e2f42;
+  --color-nav-active: #404bbf;
   /* address */
   --address-color: #ffffff;
   --address-secondary-color: rgba(255, 255, 255, 0.6);
   /* title */
   --therd-section-title-color: #2e2f42;
   --title-link-color: #2e2f42;
-  --title-team-color: #2e2f42;
   /* logo */
   --logo-up-color: #000000;
   --logo-down-color: #ffffff;
@@ -137,7 +139,11 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--color-nav-normal);
+}
+
+.nav-text:hover {
+  color: var(--color-nav-active);
 }
 
 /* NAV */
@@ -156,11 +162,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.nav > .list .link:hover,
-.nav > .list .link:focus {
-  color: #404bbf;
 }
 
 /* CONTACTS */
@@ -186,7 +187,7 @@ body {
 .nav-text:focus,
 .address-text:hover,
 .address-text:focus {
-  color: var(--hover-color);
+  color: var(--color-nav-active);
 }
 
 /* TITLE */
@@ -215,15 +216,16 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--therd-section-title-color);
-  margin-top: 120px;
-  margin-bottom: 72px;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 /* BANER (SECTION 1) */
 
 .hero {
-  height: 600px;
   background-color: var(--footer-hero-bg-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -232,8 +234,12 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 188px;
+
   margin: 0px;
+}
+
+.hero > .btn-container {
+  padding-top: 48px;
 }
 
 .hero-button {
@@ -242,9 +248,13 @@ body {
   background-color: #4d5ae5;
   color: #ffffff;
   text-decoration: none;
-  margin-top: 64px;
   margin-left: auto;
   margin-right: auto;
+  border: none;
+}
+
+.hero-button:hover {
+  background-color: #404bbf;
 }
 
 .button:hover,
@@ -269,13 +279,13 @@ body {
   margin-top: 8px;
 }
 
-.advantages-container > .list {
+.advantages-container {
   display: flex;
   list-style: none;
   margin: 0px;
   padding: 0px;
   flex-basis: calc(100% / 4);
-  margin-top: 120px;
+  padding-top: 120px;
 }
 
 .advantages-text {
@@ -311,7 +321,7 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   -webkit-text-stroke: 1px #000000;
-
+  margin: 0px;
   padding-top: 120px;
 }
 
@@ -321,7 +331,11 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 72px;
+  padding-top: 72px;
+}
+
+.team-s {
+  padding-top: 120px;
 }
 
 .team-card {
@@ -369,7 +383,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* background-color: var(--logo-text-color); */
+
   color: var(--logo-color);
   text-decoration: none;
 }
@@ -467,6 +481,7 @@ body {
   width: 586px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 96px;
 }
 
 .filters {
@@ -476,7 +491,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 96px;
 }
 
 .filters-button {
@@ -503,12 +517,10 @@ body {
 .card-set {
   list-style-type: none;
   padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 28px;
-  margin-left: -24px;
-  margin-bottom: 120px;
+  margin: 0px;
+  padding-top: 24px;
 }
 
 .container {
@@ -520,26 +532,32 @@ body {
 
 .card-set > .item {
   flex-basis: calc(100% / 3 - 24px);
-  margin-left: 24px;
-  margin-top: 48px;
+  padding-left: 24px;
+  padding-top: 48px;
 }
 
 .card {
   width: 360px;
-  margin-right: 0px;
-  border-bottom: 1px solid #e7e9fc;
+  margin: 0px;
+}
+
+.project-card {
+  height: auto;
 }
 
 .card-content {
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 
 .card-heading {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
   letter-spacing: 0.02em;
 }
 
@@ -547,22 +565,25 @@ body {
   margin-top: 8px;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
   letter-spacing: 0.02em;
 }
 
 /* FOOTER */
 
 .footer {
-  /* margin-top: 120px; */
-  height: 312px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 156px;
+
   background-color: var(--footer-hero-bg-color);
 }
 
 .footer-text {
   width: 264px;
-  height: 112px;
-  padding: 100px 1020px 100px 156px;
+}
+
+.footer-top {
+  padding-top: 120px;
 }
 
 .footer-paragraph {
