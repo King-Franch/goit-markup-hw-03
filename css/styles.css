@@ -532,6 +532,8 @@ body {
   flex-wrap: wrap;
   margin: 0px;
   margin-top: 72px;
+  padding-right: 15px;
+  padding-left: 15px;
   gap: 48px 24px;
   flex-basis: calc(100% / 3 - 24px);
 }
