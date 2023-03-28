@@ -174,6 +174,7 @@ body {
 
 .address-text {
   font-style: normal;
+  font-size: 16px;
   line-height: var(--line-height-p);
   letter-spacing: var(--letter-spacing-p);
   color: #434455;
@@ -259,6 +260,10 @@ body {
   gap: 48px 24px;
 }
 
+.advantages-text {
+  width: 264px;
+}
+
 .advantages {
   padding-top: 120px;
 }
@@ -292,6 +297,7 @@ body {
 
 .third-section {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .list {
@@ -309,16 +315,12 @@ body {
   margin-top: 72px;
 }
 
-.doing {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 /* TEAM (SECTION 4) */
 
 .team-section {
   padding-top: 120px;
   padding-bottom: 120px;
+  background-color: #f4f4fd;
 }
 
 .container > .container-list {
@@ -498,12 +500,6 @@ body {
   padding-bottom: 120px;
 }
 
-.filters-container {
-  width: 586px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .filters {
   list-style-type: none;
   padding: 0;
@@ -544,8 +540,6 @@ body {
   flex-wrap: wrap;
   margin: 0px;
   margin-top: 72px;
-  padding-right: 15px;
-  padding-left: 15px;
   gap: 48px 24px;
   flex-basis: calc(100% / 3 - 24px);
 }
@@ -574,6 +568,10 @@ body {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
+}
+
+.team-card > .card-content {
+  padding-left: calc(-16px);
 }
 
 .team-card > .card-content {
