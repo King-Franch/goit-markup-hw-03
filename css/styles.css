@@ -30,6 +30,7 @@
   /* footer */
   --footer-paragraph-text: #f4f4fd;
   --web-color: #4d5ae5;
+  --letter-spacing-p: 0.02em;
   /* box-shadow */
   --box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -254,10 +255,11 @@ body {
 
 /* SECTION 2 */
 
+.advantages-list {
+  gap: 48px 24px;
+}
+
 .advantages {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 120px;
 }
 
@@ -277,10 +279,6 @@ body {
   flex-basis: calc(100% / 4);
 }
 
-.advantages-text {
-  margin-right: 24px;
-}
-
 /* <!-- WHAT ARE WE DOING (SECTION 3) --> */
 
 .third-section-title {
@@ -292,6 +290,10 @@ body {
   color: var(--therd-section-title-color);
 }
 
+.third-section {
+  padding-top: 120px;
+}
+
 .list {
   list-style-type: none;
   display: flex;
@@ -299,8 +301,8 @@ body {
   padding: 0px;
 }
 
-.list-x:nth-child(n + 2) {
-  margin-left: 24px;
+.container-list > .list {
+  gap: 24px;
 }
 
 .container-list {
@@ -313,6 +315,15 @@ body {
 }
 
 /* TEAM (SECTION 4) */
+
+.team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container > .container-list {
+  gap: 24px;
+}
 
 .team-container {
   width: 1158px;
@@ -333,7 +344,7 @@ body {
   margin: 0px;
 }
 
-.team-section {
+.team-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -496,10 +507,11 @@ body {
 .filters {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 586px;
 }
 
 .filters-button {
@@ -539,10 +551,11 @@ body {
 }
 
 .container {
-  /* background-color: rgb(255, 196, 196); */
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .card {
@@ -583,15 +596,35 @@ body {
 
 /* FOOTER */
 
-.footer {
-  padding-top: 120px;
-  padding-bottom: 120px;
+footer {
   background-color: var(--footer-hero-bg-color);
 }
 
-.footer-text {
-  width: 264px;
-  margin-left: 156px;
+.foot {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.logo-bottom {
+  text-decoration: none;
+}
+
+.web-bottom,
+.studio-bottom {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.web-bottom {
+  color: #4d5ae5;
+}
+
+.studio-bottom {
+  color: #f4f4fd;
 }
 
 .footer-paragraph {
